@@ -1,0 +1,148 @@
+.home {
+  &__container {
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+    text-align: center;
+  }
+  &__title {
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+  }
+  &__subtitle {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+  }
+  &__img {
+    width: 300px;
+    justify-self: center;
+  }
+}
+// Buttons
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+}
+// About
+.about {
+  &__data {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: var(--mb-3);
+  }
+  &__img {
+    width: 280px;
+    border-radius: 0.5rem;
+    justify-self: center;
+  }
+}
+// services
+.services {
+  &__container {
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  &__content {
+    text-align: center;
+  }
+  &__img {
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: var(--mb-2);
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+  }
+  &__description {
+    padding: 0 1.5rem;
+  }
+}
+/*========== MENU ==========*/
+.menu {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+    padding: 0.75rem;
+  }
+  &__img {
+    width: 100px;
+    align-self: center;
+    margin-bottom: var(--mb-2);
+  }
+  &__name,
+  &__price {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+  &__name {
+    font-size: var(--normal-font-size);
+  }
+  &__detail,
+  &__price {
+    font-size: var(--small-font-size);
+  }
+  &__detail {
+    margin-bottom: var(--mb-1);
+  }
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    font-size: 1.25rem;
+    padding: 0.625rem 0.813rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+  }
+}
+
+/*========== APP ==========*/
+.app {
+  &__data {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: var(--mb-5);
+  }
+  &__stores {
+    margin-bottom: var(--mb-4);
+  }
+  &__store {
+    width: 120px;
+    margin: 0 var(--mb-1);
+  }
+  &__img {
+    width: 230px;
+    justify-self: center;
+  }
+}
+
+/*========== CONTACT ==========*/
+.contact {
+  &__container {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: var(--mb-3);
+  }
+}

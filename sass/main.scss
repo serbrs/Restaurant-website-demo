@@ -1,0 +1,14 @@
+// components
+@import "./components/header";
+@import "./components/layout";
+@import "./components/footer";
+@import "./components/responsive";
+
+// Pages
+@import "./pages/home";
+
+// helper functions
+@import "./helpers/variables";
+
+// normalize css
+@import "./normalize";
